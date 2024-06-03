@@ -1,0 +1,149 @@
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(240, 241, 214);
+    background: linear-gradient(to right, #bab8aa 0%, #917543 100%);
+    font-weight: 400;
+    font-style: normal;
+      text-align: center;
+      font-size: 30;
+      max-width: 55em;
+      width: 90%;
+      height: auto;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: center;    
+}
+
+h1 {
+    font-size: 140%;
+    text-align: left;   
+    max-width: auto;
+    height: auto;
+}
+h {
+    font-size: 70%;
+    color: rgb(53, 46, 26);
+     align-items: center;
+     text-align: center;
+}
+p1{
+  margin-right: 55rem;
+  font-size: 70%;
+  color: rgb(53, 46, 26);
+   
+}
+
+img{
+    width:50%;
+    height:auto;
+   
+}
+
+p{
+    font-size: 80%;
+   color: rgb(53, 46, 26);
+    align-items: center;
+    text-align: center;   
+
+}
+
+a {
+    color: rgb(53, 46, 26);  
+    
+}
+a:hover {
+
+    color: #b71c1c
+}
+
+nav ul {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+       
+    max-width: auto;
+    height: auto;
+    box-sizing: border-box;      
+    margin-top: -0.5em;
+    
+}
+
+    
+nav ul li a {
+
+    text-decoration: none;
+    color: #666;*
+    
+}
+
+
+nav ul li {
+
+     display:block;
+}
+    
+nav a:hover {
+
+    color: #b71c1c
+}
+
+footer {
+    color:#cdb60b;
+    font-size: 60%;
+    text-align: center;       
+  }
+  
+  footer hr {
+    border: none;
+    border-top: 1px dashed hsl(40, 92%, 20%);
+    margin: 1em auto;
+  }
+
+  form > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    text-align: center;
+    align-items: center;
+    
+  }
+  input {
+    border: 1px solid #b9abab;
+    border-radius: 0.3rem;
+    padding: 0.45rem;
+    font-size: 1rem;
+  }
+  input[type=submit], .button {
+    
+    padding: 0.5rem 3rem;
+    border-radius: 0.3rem;
+    background-color: #9a800e;
+    color: #fff;
+    font-weight: bold;
+    min-width: 12rem;
+    margin: 1rem auto;
+  }
+ 
+  
+
+span {
+    display:flex;
+
+    background: linear-gradient(to right, #ede7b6 0%, #917543 50%, #ede7b6 100%);
+    font-size: 70%;
+   color: rgb(25, 23, 19);
+     align-items: center;
+     text-align: center;
+     max-width: 70%;
+     height: auto;
+}
+
+
