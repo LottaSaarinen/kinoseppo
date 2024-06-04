@@ -15,7 +15,7 @@ include 'yla.php';
 
     <div><label>Sähköposti:</label>
     <input type="text" name="email" ></div>
-    Viesti<br>
+    Viesti: (Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta)<br>
     <textarea rows=5 cols=60 name="viesti"></textarea>
     <br><br><input type=submit value="Lähetä">
 </form>

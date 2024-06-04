@@ -19,7 +19,6 @@
                 <li><a href="tulossa.php">Tulossa</a></li> 
                <li><a href="liput.php">Liput</a></li>
                <li><a href="elamys.php">Elämyspaketit</a></li> 
-               <li><a href="tarjous.php">Tarjouspyyntö</a></li> 
                <li><a href="index.php">Etusivu</a></li> 
               </ul>
              </nav>

@@ -22,7 +22,7 @@ Elokuvateattereissamme panostamme jokaiseen yksityiskohtaan tarjotaksemme sinull
 
 <br><a href="liput.php">Varaa liput nyt</a> ja varmista paikkasi elokuvaelämyksen äärellä!
 
-Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme. <a href="liput.php">Varaa</a> elokuvaelämyspaketisi jo tänään!       
+Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme. <a href="tarjous.php"> Varaa</a> elokuvaelämyspaketisi jo tänään!       
 <br>Nähdään pian elokuvissa!
 </p>
 <br>
