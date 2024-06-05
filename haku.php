@@ -10,7 +10,7 @@ include 'yla.php';
 </form>
 <form action= "haku.php" method="GET">
     
-             <input type="submit"name ='lapset'value="Täällä kaikki lastenelokuvat">
+             <input type="submit"name ='lapset'value="Lastenelokuvat">
 </form>
 </body></html>
 
@@ -76,7 +76,6 @@ if (!$yht) echo $e->getMessage();
 
 echo"<br><hr>";
 
-echo "<p1>Kaikki Elokuvat:</p1><br><br>";
 
 
 $stmt = $yht->query("SELECT nimi,ohjaaja,genre,vuosi,miespääosa,naispääosa,ikäraja,kesto FROM elokuvat"); 
@@ -99,8 +98,8 @@ $stmt = $yht->query("SELECT nimi,ohjaaja,genre,vuosi,miespääosa,naispääosa,i
       echo " <span> <td>$rivi[ohjaaja]</td></span>" ;
       echo " <span> <td>$rivi[genre]</td></span>" ;
       echo " <span> <td>$rivi[vuosi]</td></span>" ;
-      echo " <span> <td>$rivi[naispääosa]</td></span>" ;
-      echo "<span> <td>$rivi[miespääosa]</td></span>" ;
+      echo " <span> <td>$rivi[miespääosa]</td></span>" ;
+      echo "<span> <td>$rivi[naispääosa]</td></span>" ;
       echo "<span><td>$rivi[ikäraja]</td></span>" ;
       echo "<span><td>$rivi[kesto]</td></span>" ;
    

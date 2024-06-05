@@ -2,6 +2,7 @@
 
 include 'yla.php';
 
+
 echo "<hr>";
 echo "<br>";
 
@@ -15,33 +16,32 @@ try {
     if (!$yht) echo $e->getmessage();
    
      
-    $stmt = $yht->query("SELECT nimi,ohjaaja,genre,vuosi,miespääosa,naispääosa,ikäraja,kesto FROM elokuvat where genre like '%Lastenelokuva%'"); 
+    $stmt = $yht->query("SELECT nimi,ohjaaja,vuosi,miespääosa,naispääosa,ikäraja,kesto FROM elokuvat where genre like '%Lastenelokuva%' order by nimi asc"); 
    while ($rivi = $stmt->fetch()) {
  
 
-    echo " <span><table></span>" ;
-   // echo " <span><tr></span>" ;
-    echo "   <span><th> Nimi</th></span>" ;
-    echo "   <span><th> Ohjaaja</th></span>" ;
-      echo "  <span><th> Genre</th></span>" ;
-      echo "  <span> <th> Vuosi</th></span>" ;
-      echo "  <span><th> Miespääosa</th></span>" ;
-      echo "  <span><th> Naispääosa</th></span>" ;
-      echo " <span> <th> Ikäraja</th></span>" ;
-      echo " <span> <th> Kesto</th></span>" ;
+    echo " <div><table></div>" ;
+    echo "   <div><th> Nimi</th></div>" ;
+    echo "   <div><th> Ohjaaja</th></div>" ;
+    
+      echo "  <div><th> Vuosi</th></div>" ;
+      echo "  <div><th> Miespääosa</th></div>" ;
+      echo "  <div><th> Naispääosa</th></div>" ;
+      echo " <div> <th> Ikäraja</th></div>" ;
+      echo " <div> <th> Kesto</th></div>" ;
      
       echo "<tr>" ;
-      echo " <span> <td>$rivi[nimi]</td></span>" ;
-      echo " <span> <td>$rivi[ohjaaja]</td></span>" ;
-      echo " <span> <td>$rivi[genre]</td></span>" ;
-      echo " <span> <td>$rivi[vuosi]</td></span>" ;
-      echo " <span> <td>$rivi[miespääosa]</td></span>" ;
-      echo "<span> <td>$rivi[naispääosa]</td></span>" ;
-      echo "<span><td>$rivi[ikäraja]</td></span>" ;
-      echo "<span><td>$rivi[kesto]</td></span>" ;
+      echo " <div> <td>$rivi[nimi]</td></div>" ;
+      echo " <div> <td>$rivi[ohjaaja]</td></div>" ;
+     
+      echo " <div> <td>$rivi[vuosi]</td></div>" ;
+      echo " <div> <td>$rivi[miespääosa]</td></div>" ;
+      echo "<div> <td>$rivi[naispääosa]</td></div>" ;
+      echo "<div><td>$rivi[ikäraja]</td></div>" ;
+      echo "<div><td>$rivi[kesto]</td></div>" ;
    
-      echo "<span></tr></span>" ;
-      echo "<span></table> </span>" ;
+      echo "<div></tr></div>" ;
+      echo "<div></table> </div>" ;
 
    
      } 
