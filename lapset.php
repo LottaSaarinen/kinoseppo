@@ -23,8 +23,7 @@ try {
     echo " <div><table></div>" ;
     echo "   <div><th> Nimi</th></div>" ;
     echo "   <div><th> Ohjaaja</th></div>" ;
-    
-      echo "  <div><th> Vuosi</th></div>" ;
+     echo "  <div><th> Vuosi</th></div>" ;
       echo "  <div><th> Miespääosa</th></div>" ;
       echo "  <div><th> Naispääosa</th></div>" ;
       echo " <div> <th> Ikäraja</th></div>" ;
@@ -34,7 +33,6 @@ try {
 
       echo " <div> <td>$rivi[nimi]</td></div>" ;
       echo " <div> <td>$rivi[ohjaaja]</td></div>" ;
-     
       echo " <div> <td>$rivi[vuosi]</td></div>" ;
       echo " <div> <td>$rivi[miespääosa]</td></div>" ;
       echo "<div> <td>$rivi[naispääosa]</td></div>" ;

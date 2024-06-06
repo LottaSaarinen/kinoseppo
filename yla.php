@@ -27,6 +27,7 @@
   <div class="dropdown-content">
   <a href="liput.php">Liput</a>
   <a href="elamys.php">Elämyspaketit</a>
+  <a href="tarjous.php">Jätä tarjouspyyntö elämyspaketista</a>
  
   <li class="dropdown">
  <a href="javascript:void(0)" class="dropbtn">Elokuvat</a>

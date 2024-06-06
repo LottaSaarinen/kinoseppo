@@ -2,7 +2,7 @@
 include 'yla.php';
 ?>
 <html><body>
-    
+    <br><br>
    
  <form action= "haku.php" method="GET">
       <p>HAE ELOKUVAA NIMELTÄ</p><input type ="text" name ='nimi'>
