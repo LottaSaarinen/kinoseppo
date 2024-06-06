@@ -14,10 +14,16 @@
              
        <nav>
          <ul>
-         <li><a href="teatterit.php">Teatterit</a></li>
-         <li><a href="index.php">Etusivu</a></li>     
+         <li><a href="index.php">Etusivu</a></li> 
+         
          <li class="dropdown">
-<a href="javascript:void(0)" class="dropbtn">Liput ja tiedustelut</a>
+<a href="javascript:void(0)" class="dropbtn">Teatterit</a>
+  <div class="dropdown-content">
+  
+  <a href="teatterit.php">Helsinki, Turku, Tampere, Vaasa, Rovaniemi</a>
+    
+         <li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">Liput ja elämyspaketit</a>
   <div class="dropdown-content">
   <a href="liput.php">Liput</a>
   <a href="elamys.php">Elämyspaketit</a>

@@ -29,8 +29,9 @@ try {
       echo "  <div><th> Naispääosa</th></div>" ;
       echo " <div> <th> Ikäraja</th></div>" ;
       echo " <div> <th> Kesto</th></div>" ;
-     
+      echo "<br>" ;
       echo "<tr>" ;
+
       echo " <div> <td>$rivi[nimi]</td></div>" ;
       echo " <div> <td>$rivi[ohjaaja]</td></div>" ;
      
