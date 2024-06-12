@@ -3,7 +3,7 @@
 include 'yla.php';
 
 
-echo "<hr>";
+
 echo "<br>";
 
 $dsn = "pgsql:host=localhost;dbname=lsaarinen";

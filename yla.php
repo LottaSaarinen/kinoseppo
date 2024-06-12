@@ -10,36 +10,27 @@
                    <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="tyylit.css">
-       </head>  <body>
+     </head> <body>
              
-       <nav>
-         <ul>
-         <li><a href="index.php">Etusivu</a></li> 
-         
-         <li class="dropdown">
-<a href="javascript:void(0)" class="dropbtn">Teatterit</a>
-  <div class="dropdown-content">
-  
-  <a href="teatterit.php">Helsinki, Turku, Tampere, Vaasa, Rovaniemi</a>
-    
-         <li class="dropdown">
-<a href="javascript:void(0)" class="dropbtn">Liput ja elämyspaketit</a>
-  <div class="dropdown-content">
-  <a href="liput.php">Liput</a>
-  <a href="elamys.php">Elämyspaketit</a>
-  <a href="tarjous.php">Jätä tarjouspyyntö elämyspaketista</a>
+        
+<nav>
+ <ul>
  
-  <li class="dropdown">
- <a href="javascript:void(0)" class="dropbtn">Elokuvat</a>
-  <div class="dropdown-content">
-  <a href="haku.php">Kaikki elokuvat</a>
-  <a href="tulossa.php">Tulossa olevat elokuvat</a>
-  <a href="lapset.php">Lasten elokuvat</a>
- </div>
-</li>
-</ul>
-             </nav>
-             <h1>📹KINOSEPPO</h1>
+    <p> <a href="elamys.php">Elämyspaketit</a></p>
+    <p> <a href="teatterit.php">Teatterimme</a></p>    
+     
+            <li class="dropdown">
+            <p><a href="javascript:void(0)" class="dropbtn">Elokuvat</a></p>
+            <div class="dropdown-content">
+            <p><a href="haku.php">Kaikki elokuvat</a></p>
+            <p><a href="tulossa.php">Tulossa olevat elokuvat</a></p>
+             <p><a href="lapset.php">Lasten elokuvat</a></p>
+        </div>
+      </li>
+    </ul>
+   </nav>
+   <h1><a href="index.php">📹KINOSEPPO</a></h1>  
+            <br><hr><hr><br><br><br>
             
-               
+         
   
