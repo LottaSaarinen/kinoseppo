@@ -25,8 +25,6 @@ try {
 
 ?>
 
-
-
 <main>
 	<h1>Tulossa olevat elokuvat</h1>
 	<table>
