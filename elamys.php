@@ -30,28 +30,32 @@ Leffoja voi selata <a href="haku.php">tästä</a></p>
       <p>Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme, joka huomioi kaikkien vieraiden erityisruokavaliot ja allergiat. <a href="tarjous.php">Ota yhteyttä</a>, kerro eritysruokavaliosta ja valitsemastasi elokuvasta ja teemasta. <a href="liput.php">Varaa</a> elokuvaelämyspaketisi jo tänään!</p>
 </div><br><br><br><br>
 
-
 <section class="yhteydenotto">
-      <h2>Yhteydenotto</h2>
-      <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
-      
-            <div>
-            <form action="pyynto.php" method="POST">
-  <div><label for="nimi">Nimi:</label>
-    <input id="nimi" type="text" name="nimi"></div>
-
-  <div><label>Puhelinnumero:</label>
-    <input type="text" name="puhelinnumero"></div>
-
-    <div><label>Sähköposti:</label>
-    <input type="text" name="email" ></div>
-    Viesti: (Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta)<br>
-    <textarea rows=5 cols=60 name="viesti"></textarea>
-    <br><br><input type=submit value="Lähetä">
-            <div>
-              
-      </form>
+  <h2>Yhteydenotto</h2>
+  <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
+  
+  <form id="contactForm" method="POST">
+    <div>
+      <label for="nimi">Nimi:</label>
+      <input id="nimi" type="text" name="nimi" required>
+    </div>
+    <div>
+      <label for="puhelinnumero">Puhelinnumero:</label>
+      <input id="puhelinnumero" type="text" name="puhelinnumero" required>
+    </div>
+    <div>
+      <label for="email">Sähköposti:</label>
+      <input id="email" type="email" name="email" required>
+    </div>
+    <div>
+      Viesti: (Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta)<br>
+      <textarea id="viesti" rows="5" cols="60" name="viesti" required></textarea>
+    </div>
+    <br>
+    <input type="submit" value="Lähetä">
+  </form>
 </section>
 <?php
 include 'ala.php';
+?>
 

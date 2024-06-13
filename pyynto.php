@@ -1,7 +1,10 @@
 <?php
 
 include 'yla.php';
+?>
 
+<?php
+/*
 $dsn = "mysql:host=localhost;" . "dbname={$_SERVER['DB_DATABASE']};" . "charset=utf8mb4";
 $user = $_SERVER['DB_USERNAME'];
 $pass = $_SERVER['DB_PASSWORD'];
@@ -81,6 +84,11 @@ try {
 catch (PDOException $e) {
   echo $e->getMessage();
 }
+*/
+?>
 
+
+
+<?php
 include 'ala.php'; 
 ?>

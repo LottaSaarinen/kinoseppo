@@ -1,44 +1,66 @@
 <?php
 include 'yla.php';
 ?>
-<html><body>
-<form action= "tulossa.php" method="GET">
-    
-    <input type="submit"name ='tulossa' value="Tulossa olevat elokuvat">
-</form>
 
-</body></html>
+
 <?php
-if (isset($_GET['tulossa'])) {  
-    header ("Location :https://www.elokuvauutiset.fi/site/ensi-illat/tulevat-ensi-illat");
-    
-    } 
-/*
+$dsn = "mysql:host=localhost;" . "dbname={$_SERVER['DB_DATABASE']};" . "charset=utf8mb4";
+$user = $_SERVER['DB_USERNAME'];
+$pass = $_SERVER['DB_PASSWORD'];
+$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false,];
 
-    $curl = curl_init();
+try {
+	$yht = new PDO($dsn, $user, $pass, $options);
+   if (!$yht) {die ();}
 
-curl_setopt_array($curl, [
-	CURLOPT_URL => "https://ott-details.p.rapidapi.com/advancedsearch?start_year=1970&end_year=2020&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1",
-	CURLOPT_RETURNTRANSFER => true,
-	CURLOPT_ENCODING => "",
-	CURLOPT_MAXREDIRS => 10,
-	CURLOPT_TIMEOUT => 30,
-	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	CURLOPT_CUSTOMREQUEST => "GET",
-	CURLOPT_HTTPHEADER => [
-		"x-rapidapi-host: ott-details.p.rapidapi.com",
-		"x-rapidapi-key: 0437f21ac3msh111f0a71a26c861p1037ebjsn90d455cbb197"
-	],
-]);
+   $stmt = $yht->query("SELECT idleffa, nimi, julkaisupvm, genre, ohjaaja, kuva, kesto FROM leffat");
+   $leffat = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$response = curl_exec($curl);
-$err = curl_error($curl);
 
-curl_close($curl);
+} catch (PDOException $e) { 
+	echo $e->getMessage(); die();
+}
 
-if ($err) {
-	echo "cURL Error #:" . $err;
-} else {
-	echo $response;
-}*/
 ?>
+
+
+
+<main>
+	<h1>Tulossa olevat elokuvat</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Kuva</th>
+                <th>Elokuvan Nimi</th>
+                <th>Julkaisupäivä</th>
+                <th>Genre</th>
+                <th>Ohjaaja</th>
+                <th>Kesto</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach ($leffat as $leffa): ?>
+			<tr>
+				<td><img src="<?= htmlspecialchars($leffa['kuva']) ?>" alt="<?= htmlspecialchars($leffa['nimi']) ?>" class="leffa__kuvat"></td>
+				<td><?= htmlspecialchars($leffa['nimi']) ?></td>
+                    <td><?= htmlspecialchars($leffa['julkaisupvm']) ?></td>
+                    <td><?= htmlspecialchars($leffa['genre']) ?></td>
+                    <td><?= htmlspecialchars($leffa['ohjaaja']) ?></td>
+                    <td><?= htmlspecialchars($leffa['kesto']) ?></td>
+			</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+</main>
+
+<?php
+include 'ala.php';
+?>
+
+
+
+
+
+
