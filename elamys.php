@@ -55,6 +55,15 @@ Leffoja voi selata <a href="haku.php">tästä</a></p>
     <input type="submit" value="Lähetä">
   </form>
 </section>
+
+<?php
+/*
+echo '<script type="text/javascript">
+       window.onload = function () { alert("Welcome"); } 
+</script>'; 
+*/
+?> 
+
 <?php
 include 'ala.php';
 ?>

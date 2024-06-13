@@ -22,7 +22,7 @@
             <li class="dropdown">
             <p><a href="javascript:void(0)" class="dropbtn">Elokuvat</a></p>
             <div class="dropdown-content">
-            <p><a href="haku.php">Kaikki elokuvat</a></p>
+            <p><a href="kaikki.php">Kaikki elokuvat</a></p>
             <p><a href="tulossa.php">Tulossa olevat elokuvat</a></p>
              <p><a href="lapset.php">Lasten elokuvat</a></p>
         </div>

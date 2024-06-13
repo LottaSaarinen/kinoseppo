@@ -2,29 +2,6 @@
 include 'yla.php';
 ?>
 
-
-<?php
-$dsn = "mysql:host=localhost;" . "dbname={$_SERVER['DB_DATABASE']};" . "charset=utf8mb4";
-$user = $_SERVER['DB_USERNAME'];
-$pass = $_SERVER['DB_PASSWORD'];
-$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES => false,];
-
-try {
-	$yht = new PDO($dsn, $user, $pass, $options);
-   if (!$yht) {die ();}
-
-   $stmt = $yht->query("SELECT idleffa, nimi, julkaisupvm, genre, ohjaaja, kuva, kesto FROM leffat");
-   $leffat = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
-} catch (PDOException $e) { 
-	echo $e->getMessage(); die();
-}
-
-?>
-
 <main>
 	<h1>Tulossa olevat elokuvat</h1>
 	<table>
@@ -39,16 +16,46 @@ try {
 			</tr>
 		</thead>
 		<tbody>
-			<?php foreach ($leffat as $leffa): ?>
 			<tr>
-				<td><img src="<?= htmlspecialchars($leffa['kuva']) ?>" alt="<?= htmlspecialchars($leffa['nimi']) ?>" class="leffa__kuvat"></td>
-				<td><?= htmlspecialchars($leffa['nimi']) ?></td>
-                    <td><?= htmlspecialchars($leffa['julkaisupvm']) ?></td>
-                    <td><?= htmlspecialchars($leffa['genre']) ?></td>
-                    <td><?= htmlspecialchars($leffa['ohjaaja']) ?></td>
-                    <td><?= htmlspecialchars($leffa['kesto']) ?></td>
+				<td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ_kOtlFs-mnzOLZRSdijT_YnMwknZlyf3qKi6mdFNBsG88Di4" class="leffa__kuvat"></td>
+				<td>Spaceman</td>
+                <td>2024-06-13</td>
+                <td>draama</td>
+                <td>Johan Renck</td>
+                <td>120 min</td>
 			</tr>
-			<?php endforeach; ?>
+			<tr>
+				<td><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzUqGUR7tkPqJrIGCVYC81DBeV0-sRC_7BNsgtpjKWOlFy4Tk" class="leffa__kuvat"></td>
+				<td>Sting</td>
+				<td>2024-06-05</td>
+				<td>Kauhu</td>
+				<td>Kiah Roache-Turner</td>
+				<td>120 min</td>
+			</tr>
+			<tr>
+				<td><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc9Xwhrf1jAPqbTZyKM2cnXXM6PpuDpFGyBPcnGHwep9tIOtg" class="leffa__kuvat"></td>
+				<td>Rebel Moon Part: 2</td>
+				<td>2024-04-12</td>
+				<td>Kauhu</td>
+				<td> Zack Snyder</td>
+				<td>120 min</td>
+			</tr>
+			<tr>
+				<td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5mGxS_9qt5c1bqLtXfcAqcmqJXZjsnt9cyI8atrxLfFFf4eVY" class="leffa__kuvat"></td>
+				<td>Imaginary</td>
+				<td>2024-03-08</td>
+				<td>Trilleri</td>
+				<td>Jeff Wadlow</td>
+				<td>120 min</td>
+			</tr>
+			<tr>
+				<td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVISWRRnthAAYSh55ArjXu1XoS9PYPKinHREKhicSncQLF0Xck" class="leffa__kuvat"></td>
+				<td>Lift</td>
+				<td>2024-01-12</td>
+				<td>Trilleri</td>
+				<td>F . Gary Gray</td>
+				<td>120 min</td>
+			</tr>
 		</tbody>
 	</table>
 </main>
