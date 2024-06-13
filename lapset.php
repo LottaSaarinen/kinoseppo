@@ -4,7 +4,7 @@ include 'yla.php';
 
 
 
-echo "<br>";
+echo "<br><br><br>";
 
 $dsn = "pgsql:host=localhost;dbname=lsaarinen";
 $user = "db_lsaarinen";
