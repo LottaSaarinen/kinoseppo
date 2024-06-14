@@ -7,7 +7,7 @@ include 'yla.php';
 	<table>
 		<thead>
 			<tr>
-				<th>Kuva</th>
+				
                 <th>Elokuvan Nimi</th>
                 <th>Julkaisupäivä</th>
                 <th>Genre</th>
@@ -62,4 +62,3 @@ include 'yla.php';
 
 <?php
 include 'ala.php';
-?>

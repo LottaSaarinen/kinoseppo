@@ -7,7 +7,6 @@ include 'yla.php';
 <b>TEATTERIMME:</b><br><br><br>
 
 
-
     
     <b>Sunset Cinema Vaasa:</b><br>
   Moderni ja tyylikäs sisustus neutraaleilla väreillä, mukavat istuimet sadalle ja tilava jalkatila.

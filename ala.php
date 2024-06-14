@@ -1,13 +1,6 @@
-
-
-<br>
-          
 <footer>
-              <hr>
-              &copy; Kurpitsa Solutions
-       
-       
-            </footer>
-
-
-          </body></html>
+    <hr>
+    &copy; Kurpitsa Solutions     
+  </footer>
+</body>
+</html>

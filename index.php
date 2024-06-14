@@ -12,7 +12,7 @@ include 'yla.php';
 Elokuvateattereissamme panostamme jokaiseen yksityiskohtaan tarjotaksemme sinulle ja seurueellesi parhaan mahdollisen elokuvakokemuksen. 
 <br>Viidestä teatteristamme löytyy ravintolat a-oikeuksin sekä kattava kioski<br> Nauti korkealaatuisista ääni- ja kuvanäytöksistä, jotka tempaavat sinut mukaansa elokuvan lumoihin.
 <br> Rentoudu tilavilla istuimillamme ja nauti optimaalisesta katselukokemuksesta ilman häiriöitä. Istuimet tarjoavat mukavuutta ja jalkatilaa, jotta voit keskittyä täysillä elokuvan juoneen.
-<br> Valikoimamme kattaa laajan kirjon elokuvia eri genreistä ja kohderyhmistä. Olitpa sitten komedian, draaman tai toiminnan ystävä, meiltä löydät varmasti sopivan elokuvan. Leffoja voi selata <a href="haku.php">tästä</a>
+<br> Valikoimamme kattaa laajan kirjon elokuvia eri genreistä ja kohderyhmistä. Olitpa sitten komedian, draaman tai toiminnan ystävä, meiltä löydät varmasti sopivan elokuvan.
 
 <br>Pidämme huolen siisteydestä ja hygieniasta, jotta voit nauttia elokuvaelämyksestä huoletta ja täysin siemauksin.
 
