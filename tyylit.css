@@ -21,17 +21,12 @@ h1 {
   max-width: auto;
   height: auto;
 }
+
 h {
   font-size: 50%;
   color: rgb(53, 46, 26);
   align-items: center;
   text-align: center;
-}
-p1{
-margin-right: 55rem;
-font-size: 70%;
-color: rgb(53, 46, 26);
- 
 }
 
 img{
@@ -44,7 +39,7 @@ img{
   height: 50px;
 }
 
-p{
+p {
   font-size: 80%;
  color: rgb(53, 46, 26);
   align-items: center;
@@ -54,6 +49,7 @@ p{
 a {
   color: rgb(53, 46, 26);   
 }
+
 a:hover {
 color: #b71c1c
 }
@@ -67,10 +63,10 @@ max-width: auto;
 height: auto;
 }
 
-h1 a{
+h1 a {
   text-decoration: none;}
 
-ul p{
+ul p {
   font-size: 1rem;
   color: rgb(62, 60, 60);
 }
