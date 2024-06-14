@@ -27,7 +27,7 @@ Leffoja voi selata <a href="haku.php">tästä</a></p>
       <h3>Teemaelokuvailta</h3>
       <p>Voimme myös järjestää teemaelokuvailtoja, kuten klassikkoleffoja tietyltä vuosikymmeneltä tai genrestä, jotka lisäävät hauskuutta ja viihdettä juhliin. Teemaan sopivilla tarjoiluilla.</p>
 </div><br><br>
-      <p>Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme, joka huomioi kaikkien vieraiden erityisruokavaliot ja allergiat. <a href="tarjous.php">Ota yhteyttä</a>, kerro eritysruokavaliosta ja valitsemastasi elokuvasta ja teemasta. <a href="liput.php">Varaa</a> elokuvaelämyspaketisi jo tänään!</p>
+      <p>Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme, joka huomioi kaikkien vieraiden erityisruokavaliot ja allergiat. Ota yhteyttä, kerro eritysruokavaliosta ja valitsemastasi elokuvasta ja teemasta. Varaa elokuvaelämyspaketisi jo tänään!</p>
 </div><br><br><br><br>
 
 
