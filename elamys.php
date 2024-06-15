@@ -20,8 +20,7 @@ include 'yla.php';
 <div class="package">
 <h3>Elokuvavalikoima</h3>
       <p>Elokuvien osalta tarjoamme laadukkaita ja monipuolisia vaihtoehtoja, jotka sopivat kaikenlaisiin makuihin ja tunnelmiin. Olipa kyseessä sitten draama, komedia tai jännitys, meillä on elokuvia jokaiseen makuun. 
-Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai DreamWorks-elokuvat, jotka ovat suosittuja lasten keskuudessa. Tarjolla myös klassisia lastenelokuvia, kuten "Herkules" tai "Mulan". 
-Leffoja voi selata <a href="haku.php">tästä</a></p>
+Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai DreamWorks-elokuvat, jotka ovat suosittuja lasten keskuudessa. Tarjolla myös klassisia lastenelokuvia, kuten "Herkules" tai "Mulan".
 </div><br><br>
 <div class="package">
       <h3>Teemaelokuvailta</h3>
@@ -48,8 +47,9 @@ Leffoja voi selata <a href="haku.php">tästä</a></p>
       <input id="email" type="email" name="email" required>
     </div>
     <div>
-      Viesti: (Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta)<br>
-      <textarea id="viesti" rows="5" cols="60" name="viesti" required></textarea>
+    
+      <label for="viesti"> Viesti: Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
+    <input type="text"  name="viesti" required>
     </div>
     <br>
     <input type="submit" value="Lähetä">
