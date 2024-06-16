@@ -3,7 +3,6 @@
 include 'yla.php';
 ?>
 
-
 <main>
     <h1>Lasten elokuvat</h1>
     <table>
@@ -128,3 +127,4 @@ include 'yla.php';
 </main>
 <?php
 include 'ala.php';
+?>

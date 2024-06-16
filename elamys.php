@@ -31,29 +31,38 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
 
 <section class="yhteydenotto">
   <h2>Yhteydenotto</h2>
-  <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
-  
-  <form id="contactForm" method="POST">
-    <div>
-      <label for="nimi">Nimi:</label>
-      <input id="nimi" type="text" name="nimi" required>
-    </div>
-    <div>
-      <label for="puhelinnumero">Puhelinnumero:</label>
-      <input id="puhelinnumero" type="text" name="puhelinnumero" required>
-    </div>
-    <div>
-      <label for="email">Sähköposti:</label>
-      <input id="email" type="email" name="email" required>
-    </div>
-    <div>
-    
-      <label for="viesti"> Viesti: Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
-    <input type="text"  name="viesti" required>
-    </div>
-    <br>
-    <input type="submit" value="Lähetä">
+    <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
+      <form id="contactForm" method="POST">
+        <div>
+          <label for="nimi">Nimi:</label>
+          <input id="nimi" type="text" name="nimi" required>
+        </div>
+        <div>
+          <label for="puhelinnumero">Puhelinnumero:</label>
+          <input id="puhelinnumero" type="text" name="puhelinnumero" required>
+        </div>
+        <div>
+          <label for="email">Sähköposti:</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+          <label for="viesti"> Viesti: Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
+          <input type="text"  name="viesti" required>
+        </div>
+      <br>
+    <input type="submit" value="Lähetä" class="submit">
   </form>
+  
+  <!-- PopUP Ikkuna -->
+    
+  <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kiitos viestistäsi!</h2>
+            <p>Olemme vastaanottaneet viestisi ja otamme sinuun yhteyttä pian.</p>
+            <button class="close-btn">Sulje</button>
+        </div>
+    </div>
 </section>
 
 <?php
