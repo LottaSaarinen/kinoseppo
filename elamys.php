@@ -49,7 +49,9 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
     <div>
     
       <label for="viesti"> Viesti: Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
-    <input type="text"  name="viesti" required>
+      <textarea rows="25" cols="40">
+
+</textarea>
     </div>
     <br>
     <input type="submit" value="Lähetä">
