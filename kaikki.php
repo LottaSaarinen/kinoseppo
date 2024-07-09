@@ -144,10 +144,10 @@ include 'yla.php';
                     <td>Miespääosa John Cusack</td>
                     <td>Naispääosa Kate Beckinsale</td>
                     <td>Ikäräja 13</td>
-                    <td>Kesti 95min</td>
+                    <td>Kesto 95min</td>
                 </tr>
                 <tr>
-            <td>
+        
             <td><img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" class="leffa__kuvat"></td>
                 <td>Toy Story</td>
                 <td>Ohjaaja John Lasseter</td>

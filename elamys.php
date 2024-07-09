@@ -28,45 +28,39 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
 </div><br><br>
       <p>Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaketillamme, joka huomioi kaikkien vieraiden erityisruokavaliot ja allergiat. Ota yhteyttä, kerro eritysruokavaliosta ja valitsemastasi elokuvasta ja teemasta. Varaa elokuvaelämyspaketisi jo tänään!</p>
 </div><br><br><br><br>
-
 <section class="yhteydenotto">
   <h2>Yhteydenotto</h2>
-  <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
-  
-  <form id="contactForm" method="POST">
-    <div>
-      <label for="nimi">Nimi:</label>
-      <input id="nimi" type="text" name="nimi" required>
-    </div>
-    <div>
-      <label for="puhelinnumero">Puhelinnumero:</label>
-      <input id="puhelinnumero" type="text" name="puhelinnumero" required>
-    </div>
-    <div>
-      <label for="email">Sähköposti:</label>
-      <input id="email" type="email" name="email" required>
-    </div>
-    <div>
-    
-      <label for="viesti"> Viesti: Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
-      <textarea rows="25" cols="40">
-
-</textarea>
-    </div>
-    <br>
-    <input type="submit" value="Lähetä">
+    <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
+      <form id="" method="POST">
+        <div>
+          <label for="nimi">Nimi:</label>
+          <input id="nimi" type="text" name="nimi" required>
+        </div>
+        <div>
+          <label for="puhelinnumero">Puhelinnumero:</label>
+          <input id="puhelinnumero" type="text" name="puhelinnumero" required>
+        </div>
+        <div>
+          <label for="email">Sähköposti:</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+          <label for="viesti">Kerro toiveesi elokuvasta ja tarjoilusta, sekä mahdollisesta teemasta</label>
+          <textarea rows=7 cols=60 name="viesti"required></textarea>
+        </div>
+      <br>
+    <input type="submit" value="Lähetä" class="submit">
   </form>
+  
+  <!-- PopUP Ikkuna -->
+    
+  <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kiitos viestistäsi!</h2>
+            <p>Olemme vastaanottaneet viestisi ja otamme sinuun yhteyttä pian.</p>
+            <button class="close-btn">Sulje</button>
+        </div>
+    </div>
 </section>
-
-<?php
-/*
-echo '<script type="text/javascript">
-       window.onload = function () { alert("Welcome"); } 
-</script>'; 
-*/
-?> 
-
-<?php
-include 'ala.php';
-?>
 
