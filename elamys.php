@@ -31,7 +31,8 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
 <section class="yhteydenotto">
   <h2>Yhteydenotto</h2>
     <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
-      <form id="" method="POST">
+
+      <form id="" method="POST" action="contactForm.php">
         <div>
           <label for="nimi">Nimi:</label>
           <input id="nimi" type="text" name="nimi" required>
@@ -49,7 +50,7 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
           <textarea rows=7 cols=60 name="viesti"required></textarea>
         </div>
       <br>
-    <input type="submit" value="Lähetä" class="submit">
+    <input type="submit" value="Laheta" class="submit">
   </form>
   
   <!-- PopUP Ikkuna -->
