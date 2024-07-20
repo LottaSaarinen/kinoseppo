@@ -1,5 +1,7 @@
 <?php
 
+require_once 'checkAll.php';
+
 $dsn = "mysql:host=localhost;dbname={$_SERVER['DB_DATABASE']};charset=utf8mb4";
 $user = $_SERVER['DB_USERNAME'];
 $pass = $_SERVER['DB_PASSWORD'];
@@ -20,7 +22,14 @@ try {
     $puhelin = $_POST['puhelinnumero'];
     $email = $_POST['email'];
     $viesti = $_POST['viesti'];
-
+    // TODO lisää functio joka tarkistaa kielletyt sanat.....
+    if (!tarkistaTiedot(['nimi' => $nimi, 'puhelinnumero' => $puhelin, 'email' => $email, 'viesti' => $viesti])) {
+        // Jos väärä sana löytyy niin viedään käyttäjä virhe.php sivulle...
+        header("Location: virhe.php");
+        exit();
+    }
+    
+    // Muuten jatkuu normaalista kamaa kantaan.
     $lisaa_viesti = "INSERT INTO tarjouspyynto (nimi, puhelinnumero, email, viesti, lahetetty) VALUES (?, ?, ?, ?, NOW())";
     $stmt = $yhteys->prepare($lisaa_viesti);
 

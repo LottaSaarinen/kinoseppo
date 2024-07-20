@@ -52,16 +52,3 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
       <br>
     <input type="submit" value="Laheta" class="submit">
   </form>
-  
-  <!-- PopUP Ikkuna -->
-    
-  <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Kiitos viestistäsi!</h2>
-            <p>Olemme vastaanottaneet viestisi ja otamme sinuun yhteyttä pian.</p>
-            <button class="close-btn">Sulje</button>
-        </div>
-    </div>
-</section>
-
