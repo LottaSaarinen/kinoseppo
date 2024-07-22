@@ -26,4 +26,5 @@ Tee syntymäpäivistä ja ystävätapaamisista ikimuistoisia elokuvaelämyspaket
 </p>
 <br>
 <?php
-include 'ala.php';   
+include 'ala.php';  
+?> 

@@ -2,7 +2,6 @@
 include 'yla.php';
 ?>
 
-<br><br><br>
 
 <div class="content">
       <h2>Elokuva elämyspaketit</h2>
@@ -31,33 +30,31 @@ Lapsille on saatavilla animaatioelokuvat, kuten Disney-Pixarin elokuvat tai Drea
 <section class="yhteydenotto">
   <h2>Yhteydenotto</h2>
     <p>Jätä tarjouspyyntö lasten tai aikuisten elokuvaelämyspaketista</p>
-     
-    
-<form action="viesti.php" method="POST">
-  <div><label for="nimi">Nimi:</label>
-    <input id="nimi" type="text" name="nimi"></div>
 
-    <div><label>Puhelinnumero:</label>
-    <input type="text" name="puhelinnumero"></div>
-
-    <div><label>Sähköposti:</label>
-    <input type="text" name="email" ></div>
-
-    <div><label>Viesti:</label>
-
-    <textarea rows=5 cols=60 name="user_input"></textarea>
-    <br><br><input type=submit value="Lähetä">
-</form>
-  
-  <!-- PopUP Ikkuna -->
-    
-  <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Kiitos viestistäsi!</h2>
-            <p>Olemme vastaanottaneet viestisi ja otamme sinuun yhteyttä pian.</p>
-            <button class="close-btn">Sulje</button>
+      <form id="" method="POST" action="contactForm.php">
+        <div>
+          <label for="nimi">Nimi:</label>
+          <input id="nimi" type="text" name="nimi" required>
         </div>
-    </div>
-</section>
+        <div>
+          <label for="puhelinnumero">Puhelinnumero:</label>
+          <input id="puhelinnumero" type="text" name="puhelinnumero" required>
+        </div>
+        <div>
+          <label for="email">Sähköposti:</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div>
+          <label for="viesti">Kerro toiveesi elokuvasta ja tarjoilusta sekä mahdollisesta teemasta</label>
+          <textarea rows=20 cols=40% widht="auto" name="viesti"required></textarea>
+        </div>
+      <br>
+    <input type="submit" value="Läheta" class="submit">
+  </form>
+  </section>
+  <body>
+</html>
 
+<?php
+include 'ala.php';
+?>

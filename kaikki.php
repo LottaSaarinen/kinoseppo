@@ -2,7 +2,7 @@
 include 'yla.php';
 ?>
 
-<br><br><br>
+
 <h1>Kaikki elokuvamme</h1>
 <br><br>
 <main>

@@ -1,43 +1,41 @@
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   color: rgb(240, 241, 214);
   background: linear-gradient(to right, #bab8aa 0%, #917543 100%);
   font-weight: 400;
-  font-style: normal;
   text-align: center;
-  max-width: auto;
-  height: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center; 
+  margin: 1em auto;
+  align-items: center;
+ 
+}
+
+.info {
+  text-align: center;
 }
 
 p {
   font-size: 90%;
   color: rgb(53, 46, 26);
-  align-items: center;
-  text-align: center;   
+  text-align: center;
 }
+
 a {
   color: rgb(53, 46, 26);   
 }
 
 a:hover {
-color: #b71c1c
+  color: #b71c1c;
 }
 
 h1 {
-    text-align: left;   
-    font-size: 2rem;
-    font-weight: 900;
+  text-align: left;   
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 h1 a {
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 ul p {
   font-size: 1rem;
@@ -49,64 +47,60 @@ ul a {
 }
 
 ul {
-list-style-type: none;
-padding: 10px;
-display: flex;
-justify-content: space-around;
-flex-direction: row;
-margin-top: -2rem;
-text-align: center;
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2rem;
+  text-align: center;
 }
 
 li a, .dropbtn {
-display: inline-block;
-text-align: center;
+  display: inline-block;
+  text-align: center;
 }
 
 .dropdown-content {
-display: none;
-position: absolute;
-z-index: 1;
+  display: none;
+  position: absolute;
+  z-index: 1;
 }
 
 .dropdown-content a {
-color:none;
-text-decoration: none;
-display: block;
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
-.dropdown-content a:hover {background-color: #aa956f;}
+.dropdown-content a:hover {
+  background-color: #aa956f;
+}
 
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
 
-img{
-  width:50%;
-  height:auto;
+img {
+  width: 50%;
+  height: auto;
 }
 
 .leffa__kuvat {
   width: 50px;
   height: 50px;
 }
+
 .yhteydenotto {
   padding: 20px;
   max-width: 600px;
   margin: auto;
-}
-
-.yhteydenotto h2 {
-  text-align: center;
-}
-
-.yhteydenotto p {
   text-align: center;
 }
 
 form div {
   margin-bottom: 15px;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -121,7 +115,6 @@ input[type="text"], input[type="email"] {
   box-sizing: border-box;
 }
 
-
 input[type="submit"] {
   width: 70%;
   background-color: #4CAF50;
@@ -131,23 +124,23 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   background-color: #45a049;
 }
 
 table {
-  display: inline-grid ;
+  display: inline-grid;
   justify-content: center;
   text-align: center;
-  align-items: center;
   max-width: 90%;
   border-collapse: collapse;
 }
 
 tr {
-  display: inline-grid ;
-  justify-content: column;
-  max-width:auto;
+  display: inline-grid;
+  justify-content: center;
+  max-width: auto;
 }
 
 tr:hover {
@@ -158,10 +151,8 @@ th, td {
   padding: 10px;
   border: 1px solid #040404;
   border-radius: 0.3rem;
-  border-collapse: collapse;
   border-bottom-color: rgb(187, 185, 185);
 }
-
 
 .modal {
   display: none;
@@ -172,7 +163,6 @@ th, td {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
   padding-top: 60px;
 }
@@ -200,13 +190,20 @@ th, td {
 }
 
 footer {
-  color:#cdb60b;
+  width: 100%;
+  color: #cdb60b;
   font-size: 60%;
-  text-align: center;       
+  text-align: center;  
+  align-items: center;
+  padding: 10px;
+  bottom: 0em; 
+ 
 }
 
 footer hr {
   border: none;
-  border-top: 1px dashed hsl(40, 92%, 20%);
-  margin: 1em auto;
+  border-top: 1px dashed hsl(40, 92%, 20%); 
+  margin-bottom: 1rem;
+  
 }
+

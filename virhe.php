@@ -1,8 +1,13 @@
 <?php
 
+
 include 'yla.php';   
 
-echo "Viestissä on sanoja, joita ei sallita!";
-
-include 'ala.php';   
+?>
+<br><br><br>
+<h class="info"><h><b>Jokin meni pieleen</b></h>
+    <p>Viestin lähettämisessä tapahtui virhe. Yritä uudelleen myöhemmin.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<?php
+include 'ala.php';
 ?>
