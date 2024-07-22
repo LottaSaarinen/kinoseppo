@@ -29,7 +29,7 @@ KinoSeppo tarjoaa käyttäjille mahdollisuuden tehdä elokuvaelämyspyyntöjä. 
       puhelinnumero VARCHAR(20),
       email VARCHAR(50) NOT NULL,
       viesti TEXT,
-      lahetetty TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      lähetetty TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
     ```
 
